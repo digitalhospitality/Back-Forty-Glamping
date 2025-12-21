@@ -1,0 +1,38 @@
+// custom.js
+
+// 2. Navbar Scroll Logic (Header Fix)
+$(document).ready((function() {
+    $(window).scroll((function() {
+        // console.log($(window).scrollTop()); // Keeping this line is fine for development, but remove it for production.
+        
+        if ($(window).scrollTop() > 20) {
+            $(".navbar_top").addClass("navbar-fixed-top");
+        } else {
+            $(".navbar_top").removeClass("navbar-fixed-top");
+        }
+    }));
+}));
+
+// 3. Side Navigation Open Click
+$(".navbartoggler").click((function() {
+    $(".sidenav").addClass("open");
+}));
+
+// 4. Side Navigation Close Click
+$(".closebtn").click((function() {
+    $(".sidenav").removeClass("open");
+}));
+
+// 3. Side Navigation Open Click
+$(".navbartoggler").click((function() {
+    $(".header-sec").addClass("opennew");
+}));
+
+// 4. Side Navigation Close Click
+$(".closebtn").click((function() {
+    $(".header-sec").removeClass("opennew");
+}));
+
+
+
+
