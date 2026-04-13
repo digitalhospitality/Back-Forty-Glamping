@@ -1,0 +1,334 @@
+﻿<footer class="footer" id="emailsign">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footer-col">
+                    <h3>News & Specials</h3>
+                    <p>Sign Up for News & Specials</p>
+                    <div class="footer-btn">
+                        <a href="https://resnexus.com/resnexus/reservations/signup/C41AB3D8-05C3-45AD-9BD3-8CEAA0F53EBC/subscribe" target="_blank" class="btn btn-text" title="Sign Up">SIGN UP</a>
+                    </div>
+                    <div class="contactform footer-form d-none">
+                        <div class="form helveticaNeue-m">
+                            <div class="form-item input_h">
+                                <input type="text" id="name" class="" title="" maxlength="50" onfocus="this.placeholder = ''" onblur="this.placeholder = ''" onkeyup="requireChk(this,'Please enter your name')" autocomplete="off" required>
+                                <label for="name">Name</label>
+                                <span class="error" id="errorname" for="errorname"></span>
+                            </div>
+                            <div class="form-item input_h">
+                                <input type="text" autocomplete="off" title="" maxlength="50" id="email" onkeyup="requireEmailChk(this,'Please enter a valid email address')" required>
+                                <label for="erroremail">Email</label>
+                                <span class="error" id="erroremail" for="erroremail"></span>
+
+                            </div>
+                        </div>
+                        <div class="text-start mt-2 footer-btn">
+                            <a id="getintouch" class="btn btn-text cursor btnloding2" title="Sign Up"
+                               onclick="if(CheckContFormValidate()){setMail();}else{ return false;}">
+                                <span id="btnText">SIGN UP</span>
+                                <span id="spinner" class="spinner" style="display: none;"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    @*<form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="email" placeholder="Your Phone" name="phone">
+                        </div>
+                        <div class="footer-btn">
+                            <button type="submit" class="btn btn-text" title="SIGN UP">SIGN UP</button>
+                        </div>
+                    </form>*@
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="footer-col footer-col2">
+                    <h3>Contact Us</h3>
+                    <h4 class="text-white">Back Forty Glamping</h4>
+                    <p>145166 Side Rd 16 <br> Meaford, Ontario &nbsp;N4L 1W5<br /> Canada</p>
+                    <p class="mt-3">                       
+                       
+                        Phone: <a href="tel:+15193774332" title="(519)-377-4332">(519)-377-4332</a> <br>
+                        Email: <a href="mailto:info@backfortyglamping.com" title="info@backfortyglamping.com">info@backfortyglamping.com</a><br>
+                        Media Inquiries: <a href="mailto:media@backfortyglamping.com" title="media@backfortyglamping.com">media@backfortyglamping.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="footer-col footer-col2 footerfollow">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="@("https://www.tiktok.com/@back40glamping")" title="TikTok" target="_blank"><img src="../../assets/images/follow-icon1.webp" class="img-fluid" alt="TikTok" loading="lazy"></a></li>
+                        <li><a href="https://www.facebook.com/backfortyglamping" target="_blank" title="Facebook"><img src="../../assets/images/follow-icon2.webp" class="img-fluid" alt="Facebook" loading="lazy"></a></li>
+                        <li><a href="https://www.instagram.com/backfortyglamping/" title="Instagram " target="_blank"><img src="../../assets/images/follow-icon3.webp" class="img-fluid" alt="Instagram" loading="lazy"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row copyrightrow">
+            <div class="col-md-6">
+                <div class="copyright">
+                    <p>© <span id="labeldate"></span> All Rights Reserved | Back Forty Glamping</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="copyright-link">
+                    <ul>
+                        <li><a href="contact" title="Contact">Contact </a></li>
+                        <li><a href="policies#faqsec" title="FAQ’s">FAQ’s</a></li>
+                        <li><a href="sitemap" title="Website Sitemap">Website Sitemap</a></li>
+                        <li><a href="privacy-policy" title="Privacy Policy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .btnloding2 {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
+    .spinner {
+        border: 1px solid rgb(64, 85, 108);
+        border-top: 1px solid white;
+        border-radius: 50%;
+        width: 26px;
+        height: 26px;
+        animation: spin 1s linear infinite;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    @@keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* Disabled button style */
+    .btn.disabled {
+        cursor: not-allowed;
+        opacity: 0.4;
+    }
+
+    .minauto {
+        min-width: auto !important;
+    }
+</style>
+
+@{
+    var filterchk = @"^[a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$";
+}
+<link href="~/assets/css/sweetalert2.min.css" rel="stylesheet" />
+<script src="~/assets/js/sweetalert2.min.js"></script>
+@*footer  get in touch script start*@
+<script type="text/javascript">
+
+    function Count(text, long) {
+        var maxlength = new Number(long); // Change number to your max length.
+        if (text.value.length > maxlength) {
+            text.value = text.value.substring(0, maxlength);
+        }
+    }
+
+    function requireChk(obj, errormsg) {
+        objId = obj.id;
+        var ObjclassName = $('#' + objId).attr('class');
+        if (obj.value != '') {
+            if (ObjclassName.indexOf("input-validation-error") != -1) {
+                $('#' + objId).removeClass('input-validation-error').addClass('valid');
+                $('#' + objId).css("border", "1px solid #fff");
+                $('#error' + objId).html("");
+                $('#error' + objId).attr("class", "");
+                $('#' + objId).css("border", "1px solid #fff");
+
+            }
+        }
+        if (obj.value == "") {
+            if (ObjclassName.indexOf("valid") != -1) {
+                $('#' + objId).removeClass('valid').addClass('input-validation-error');
+
+                $('#' + objId).css("border", "1px solid #B50007");
+                $('#error' + objId).html(errormsg);
+                $('#error' + objId).attr("class", "field-validation-error");
+            }
+        }
+    }
+
+
+    function requireEmailChk(obj, errormsg) {
+        debugger;
+        objId = obj.id;
+        var cEmail = $('#' + objId).val();
+        var ObjclassName = $('#' + objId).attr('class');
+        var fiter = new RegExp('@filterchk');
+        if (obj.value != '') {
+            if (ObjclassName.indexOf("input-validation-error") != -1) {
+
+                if (!fiter.test(cEmail)) {
+                    $('#' + objId).removeClass('valid').addClass('input-validation-error');
+                    $('#' + objId).css("border", "1px solid #B50007");
+                    $('#error' + objId).html(errormsg);
+                    $('#error' + objId).attr("class", "field-validation-error");
+                }
+                else {
+                    $('#' + objId).removeClass('input-validation-error').addClass('valid');
+                    $('#' + objId).css("border", "1px solid #fff");
+                    $('#error' + objId).html("");
+                    $('#error' + objId).attr("class", "");
+                }
+            }
+
+            if (ObjclassName.indexOf("valid") != -1) {
+
+                if (!fiter.test(cEmail)) {
+                    $('#' + objId).removeClass('valid').addClass('input-validation-error');
+                    $('#' + objId).css("border", "1px solid #B50007");
+                    $('#error' + objId).html(errormsg);
+                    $('#error' + objId).attr("class", "field-validation-error");
+                }
+                else {
+                    $('#' + objId).removeClass('input-validation-error').addClass('valid');
+                    $('#' + objId).css("border", "1px solid #fff");
+                    $('#error' + objId).html("");
+                    $('#error' + objId).attr("class", "");
+                }
+            }
+        }
+        if (obj.value == "") {
+            if (ObjclassName.indexOf("valid") != -1) {
+                $('#' + objId).removeClass('valid').addClass('input-validation-error');
+                $('#' + objId).css("border", "1px solid #B50007");
+                $('#error' + objId).html(errormsg);
+                $('#error' + objId).attr("class", "field-validation-error");
+            }
+        }
+    }
+
+    var chkPageValidateFlag = "0";
+    function CheckContFormValidate() {        
+        chkPageValidateFlag = "1";
+        var fiter = new RegExp('@filterchk');
+        var cEmail = $('#email').val();
+        var validflag = "0";
+        var selectedVal = "";
+
+        if ($('#email').val() == "") {
+            $('#email').focus(); $('#email').attr("class", "input-validation-error"); $('#email').css("border", "1px solid #B50007");
+            $('#erroremail').html("Please enter a valid email address"); $('#erroremail').attr("class", "field-validation-error");
+            validflag = "1";
+        }
+        else {
+            $('#email').attr("class", "valid"); $('#email').css("border", "1px solid #fff"); $('#erroremail').html(""); $('#erroremail').attr("class", "");
+        }
+
+        if (!fiter.test(cEmail)) {
+            $('#email').focus(); $('#email').attr("class", "input-validation-error"); $('#erroremail').html("Please enter a valid email address"); $('#erroremail').attr("class", "field-validation-error");
+            validflag = "1";
+        }
+        else {
+            $('#email').attr("class", ""); $('#erroremail').html(""); $('#erroremail').attr("class", "");
+        }
+
+     
+        if ($('#name').val() == "") {
+            $('#name').focus(); $('#name').attr("class", "input-validation-error"); $('#name').css("border", "1px solid #B50007"); $('#errorname').html("Please enter your  name"); $('#errorname').attr("class", "field-validation-error");
+            validflag = "1";
+        }
+        else {
+            $('#name').attr("class", ""); $('#name').css("border", "1px solid #fff"); $('#errorname').html(""); $('#errorname').attr("class", "");
+        }
+        if (validflag == "1") {
+            return false;
+        }
+        else {
+            var btnLoading = document.getElementById('getintouch');
+            var spinner = document.getElementById('spinner');
+            var btnText = document.getElementById('btnText');
+            // Ensure spinner and btnText exist before modifying
+            if (btnLoading && spinner && btnText) {
+                // Trigger the spinner immediately without waiting for button click
+                btnLoading.classList.add('disabled');
+                btnText.style.opacity = '0.6';
+                spinner.style.display = 'inline-block';
+
+                setTimeout(function () {
+                    btnLoading.classList.remove('disabled');
+                    btnText.style.opacity = '1';
+                    spinner.style.display = 'none';
+                    // alert('Process completed!');
+                }, 3000);
+            } else {
+                console.error('Submit button, spinner, or btnText element not found.');
+            }
+            return true;
+        }
+    }
+
+
+    var XmlHttp;
+    function setMail() {
+        var name = $("#name").val();
+        var email = $("#email").val();
+       
+        $.ajax({
+            type: "POST",
+            url: "/SendGetintouchmail",
+            data: {
+                email: email, name: name
+            },
+            success: function (result) {
+                if (result == "0") {
+                    createCustomBox('The email address has already been added', 'Email Already Exists');
+                }
+                else {
+                    createCustomBox('Thank you for subscribing to our mailing list.', 'Successfully Signed Up');
+
+                   // createCustomBox("Thank you for contacting Back Forty Glamping, we will get back to you shortly.", "Message Sent");
+
+                    $("#email").val('');
+                    $("#name").val('');
+
+
+                    $("#name").removeClass('valid');
+                    $("#email").removeClass('valid');
+                }
+            }
+        });
+    }
+    function createCustomBox(msg, title) {
+        swal({
+            title: title,
+            html: msg + "<br>" + "<br>" +
+                '<button type="button" class="btn learnmore send mb-3 mt-3 CustomBox m-auto minauto wx-100 h-auto py-2 px-4">' + 'OK' + '</button>',
+            type: "success",
+            showConfirmButton: false,
+            showCancelButton: false
+        });
+    }
+    $(document).on('click', '.CustomBox', function () {
+        console.log('Button 1');
+        swal.clickConfirm();
+    });
+</script>
+@*footer  get in touch script end *@

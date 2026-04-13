@@ -1,0 +1,362 @@
+﻿
+@{
+    ViewBag.Title = "contactus";
+    Layout = "~/Views/Shared/_LayoutEUMaster.cshtml";
+}
+
+@section MetaSection{
+    <title>Get in Touch with Us | Back Forty Glamping</title>
+    <meta name="description" content="Have any questions? Contact us via phone, email, or our convenient form for questions, bookings, and more. We look forward to welcoming you!" />
+}
+<span id="MenuId" style="display: none;">contactus</span>
+
+
+<main>
+    <section title="Back Forty Road Sign" class="hero-banner" style="background: url('../../assets/images/back-forty-road-sign.webp');"></section>
+    <div class="banner-bottomdesign">
+        <img src="../../assets/images/banner-bottomdesign.webp" class="img-fluid w-100 h-100" alt="banner-bottomdesign" loading="lazy">
+    </div>
+
+    <section class="mainsec contact-mainsec ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-heading">
+                        <h1>Reach Out to Back Forty Glamping</h1>
+                        <p>Have questions or concerns? It’s easy to get in touch with our team. Below, you’ll find our phone number, email, and a convenient contact form for all your inquiries. We look forward to hearing from you and welcoming you to our glamping retreat.</p>
+
+                        <h2>Get In Touch</h2>
+                        <p> <b>Back Forty Glamping</b><br />145166 Side Rd 16 <br> Meaford, Ontario &nbsp;N4L 1W5<br /> Canada</p>
+                        <p class="mt-3">
+
+                            Phone: <a href="tel:+15193774332" title="(519)-377-4332">(519)-377-4332</a> <br>
+                            Email: <a href="mailto:info@backfortyglamping.com" title="info@backfortyglamping.com">info@backfortyglamping.com</a><br>
+                            Media Inquiries: <a href="mailto:media@backfortyglamping.com" title="media@backfortyglamping.com">media@backfortyglamping.com</a>
+                        </p>
+                    </div>
+
+                    @*<form>
+                            <div class="contact-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="date" placeholder="Your Name" name="name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" name="email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="phone" placeholder="Your Phone" name="phone">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-btn">
+                                    <button type="submit" class="btn btn-text" title="Send">Send</button>
+                                </div>
+                            </div>
+                        </form>*@
+
+                    <div class="contact-form">
+
+                        <div class="form-penal pt-md-2 inputbgnone">
+                            <div class="row">
+                                <div class="col-lg-12 ">
+                                    <div class="form-group mb-4 field position-relative form-item">
+                                        <input name="Namegetintuch" id="Namegetintuch" class="form-control  mb-0 f-16 " type="text" title="" maxlength="50" onkeyup="requireChk2(this, 'Please enter your first name')" value="" onfocus="    this.placeholder = ''" required>
+                                        <label for="Namegetintuch" title1="Your Name*" data-title1="Your Name*"><span class="d-none">Your Name</span></label>
+                                        <div class="error" id="errorNamegetintuch"></div>
+                                    </div>
+                                </div>                           
+                                <div class="col-lg-12">
+                                    <div class="form-group mb-4 field  position-relative form-item">
+                                        <input name="EmailTour" id="EmailTour" class="form-control  mb-0 f-16 " title="" type="text" maxlength="50" onkeyup="requireEmailChk2(this,'Please enter a valid email address')" value="" onfocus="this.placeholder = ''" required>
+                                        <label for="EmailTour" title1="Your Email*" data-title1="Your Email*"><span class="d-none">Your Email</span></label>
+                                        <div class="error" id="errorEmailTour"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group mb-4 field position-relative form-item">
+                                        <input name="PhoneTour" id="PhoneTour" class="form-control  mb-0 f-16" title="" type="text" maxlength="50" onkeyup="requireChk2(this, 'Please enter a valid phone number')" value="" onfocus="    this.placeholder = ''" required>
+                                        <label for="PhoneTour" title1="Your Phone*" data-title1="Your Phone*"><span class="d-none">Your Phone</span></label>
+                                        <div class="error" id="errorPhoneTour"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group field mb-4 h100 form-item">
+                                        <textarea style="resize:none" name="addtioncomments" id="addtioncomments" title="" class="form-control " rows="5" maxlength="500" onfocus="this.placeholder = ''" required></textarea>
+                                        <label for="addtioncomments" title1="Message" data-title1="Message"><span class="d-none">Message</span></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mt-2">
+                                    <div class="text-start d-sm-flex form-btn">
+                                        <button type="button" id="submitBtn" title="Send" 
+                                                onclick="if (CheckingTourForm()) { SendContactUsmail(); } else{ return false;}"
+                                                class="btn btn-text cursor btnloding">
+                                            <span id="btnText">Send</span>
+                                            <span id="spinner" class="spinner" style="display: none;"></span>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="responsive-map contactiframe">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90937.10285356083!2d-80.78345236186497!3d44.5809783710733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882a071d7b48eb4f%3A0x93edd8aa4f68d3bc!2sBack%20Forty%20Glamping!5e0!3m2!1sen!2sin!4v1766658423278!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+</main>
+
+
+
+<style>
+    .btnloding {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
+    .spinner {
+        border: 2px solid rgb(64, 85, 108);
+        border-top: 2px solid white;
+        border-radius: 50%;
+        width: 26px;
+        height: 26px;
+        animation: spin 1s linear infinite;
+        position: absolute;
+    }
+
+    @@keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* Disabled button style */
+    .btn.disabled {
+        cursor: not-allowed;
+        opacity: 0.4;
+    }
+
+    .minauto {
+        min-width: 155px !important;
+    }
+</style>
+
+@{
+    var filterchk = @"^[a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$";
+}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href="~/assets/css/sweetalert2.min.css" rel="stylesheet" />
+<script src="~/assets/js/sweetalert2.min.js"></script>
+
+
+<script type="text/javascript">
+   var chkPageValidateFlag = "0";
+   function CheckingTourForm() {
+
+       chkPageValidateFlag = "1";
+       var fiter = new RegExp('@filterchk');
+       var cemail = $('#EmailTour').val();
+       var validflag = "0";
+       var selectedVal = "";
+
+   //First Name validation
+
+       if ($('#Namegetintuch').val() == "") {
+           $('#Namegetintuch').attr("class", "form-control input-validation-error"); $('#Namegetintuch').css("border", "1px solid #000"); $('#errorNamegetintuch').html("Please enter your first name"); $('#errorNamegetintuch').attr("class", "field-validation-error");
+           validflag = "1";
+       }
+       else {
+           if ($('#Namegetintuch').hasClass("input-validation-error")) {
+               $('#Namegetintuch').attr("class", "form-control valid"); $('#Namegetintuch').css("border", "1px solid #000"); $('#errorNamegetintuch').html(""); $('#errorNamegetintuch').attr("class", "");
+           }
+       }
+          
+       //email validation
+
+       if ($('#EmailTour').val() == "") {
+           $('#EmailTour').attr("class", "form-control input-validation-error"); $('#EmailTour').css("border", "1px solid #000"); $('#errorEmailTour').html("Please enter a valid email address"); $('#errorEmailTour').attr("class", "field-validation-error");
+           validflag = "1";
+       }
+       else {
+           if ($('#EmailTour').hasClass("input-validation-error")) {
+               $('#EmailTour').attr("class", "form-control  valid"); $('#EmailTour').css("border", "1px solid #000"); $('#errorEmailTour').html(""); $('#errorEmailTour').attr("class", "");
+           }
+       }
+       if (!fiter.test(cemail)) {
+
+           $('#EmailTour').attr("class", "form-control input-validation-error"); $('#errorEmailTour').html("Please enter a valid email address"); $('#errorEmailTour').attr("class", "field-validation-error");
+
+           validflag = "1";
+       }
+       //Phone validation
+       if ($('#PhoneTour').val() == "") {
+           $('#PhoneTour').attr("class", "form-control input-validation-error"); $('#PhoneTour').css("border", "1px solid #000"); $('#errorPhoneTour').html("Please enter a valid phone number"); $('#errorPhoneTour').attr("class", "field-validation-error");
+           validflag = "1";
+       }
+       else {
+           if ($('#PhoneTour').hasClass("input-validation-error")) {
+               $('#PhoneTour').attr("class", "form-control valid"); $('#PhoneTour').css("border", "1px solid #000"); $('#errorPhoneTour').html(""); $('#errorPhoneTour').attr("class", "");
+           }
+       }
+
+
+       if (validflag == "1") {
+           return false;
+       }
+       else {
+           var btnLoading = document.getElementById('submitBtn');
+           var spinner = document.getElementById('spinner');
+           var btnText = document.getElementById('btnText');
+
+           // Ensure spinner and btnText exist before modifying
+           if (btnLoading && spinner && btnText) {
+               // Trigger the spinner immediately without waiting for button click
+               btnLoading.classList.add('disabled');
+               btnText.style.opacity = '0.6';
+               spinner.style.display = 'inline-block';
+
+               setTimeout(function () {
+                   btnLoading.classList.remove('disabled');
+                   btnText.style.opacity = '1';
+                   spinner.style.display = 'none';
+                   // alert('Process completed!');
+               }, 3000);
+           } else {
+               console.error('Submit button, spinner, or btnText element not found.');
+           }
+           return true;
+       }
+   }
+   var XmlHttp;
+    function SendContactUsmail() {
+       var mS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+
+       var Namegetintuch = $("#Namegetintuch").val();      
+       var PhoneTour = $("#PhoneTour").val();
+       var EmailTour = $("#EmailTour").val();      
+       var addtioncomments = $("#addtioncomments").val();
+
+       $.ajax({
+           type: "POST",
+           url: "/SendContactUsmail",
+           data: {
+               Namegetintuch: Namegetintuch, PhoneTour: PhoneTour, EmailTour: EmailTour,
+                 addtioncomments: addtioncomments
+               },
+           success: function (result) {       
+               $("#Namegetintuch").val('');      
+               $("#PhoneTour").val('');
+               $("#EmailTour").val(''); 
+               $("#addtioncomments").val('');
+
+               createCustomBox2("Thank you for contacting Back Forty Glamping, we will get back to you shortly", "Message Sent");
+               $("#Namegetintuch").removeClass('input-validation-error').css("border", "1px solid #000").removeClass('valid');;
+               $("#LastNameTour").removeClass('valid');
+               $("#EmailTour").removeClass('valid');
+               $("#PhoneTour").removeClass('valid');
+
+
+           }
+       });
+   }
+</script>
+<script type="text/javascript">
+   function requireChk2(obj, errormsg) {
+       objId = obj.id;
+       var ObjclassName = $('#' + objId).attr('class');
+       if (obj.value != '') {
+           if (ObjclassName.indexOf("input-validation-error") != -1) {
+               $('#' + objId).removeClass('input-validation-error').addClass('valid');
+               $('#error' + objId).html("");
+               $('#error' + objId).attr("class", "");
+               $('#' + objId).css("border", "1px solid #000");
+           }
+       }
+       if (obj.value == "") {
+           if (ObjclassName.indexOf("valid") != -1) {
+               $('#' + objId).removeClass('valid').addClass('input-validation-error');
+               $('#error' + objId).html(errormsg);
+               $('#error' + objId).attr("class", "field-validation-error");
+           }
+       }
+   }
+   function requireEmailChk2(obj, errormsg) {
+
+       objId = obj.id;
+       var cEmail = $('#' + objId).val();
+       var ObjclassName = $('#' + objId).attr('class');
+       var fiter = new RegExp('@filterchk');
+       if (obj.value != '') {
+           if (ObjclassName.indexOf("input-validation-error") != -1) {
+               if (!fiter.test(cEmail)) {
+                   $('#' + objId).removeClass('valid').addClass('input-validation-error');
+                   $('#error' + objId).html(errormsg);
+                   $('#error' + objId).attr("class", "field-validation-error");
+               }
+               else {
+                   $('#' + objId).removeClass('input-validation-error').addClass('valid');
+                   $('#error' + objId).html("");
+                   $('#error' + objId).attr("class", "");
+               }
+           }
+           if (ObjclassName.indexOf("valid") != -1) {
+
+               if (!fiter.test(cEmail)) {
+                   $('#' + objId).removeClass('valid').addClass('input-validation-error');
+                   $('#error' + objId).html(errormsg);
+                   $('#error' + objId).attr("class", "field-validation-error");
+               }
+               else {
+                   $('#' + objId).removeClass('input-validation-error').addClass('valid');
+                   $('#error' + objId).html("");
+                   $('#error' + objId).attr("class", "");
+               }
+           }
+       }
+       if (obj.value == "") {
+           if (ObjclassName.indexOf("valid") != -1) {
+               $('#' + objId).removeClass('valid').addClass('input-validation-error');
+               $('#error' + objId).html(errormsg);
+               $('#error' + objId).attr("class", "field-validation-error");
+           }
+       }
+   }
+   function createCustomBox2(msg,title) {
+       swal({
+           title: title,
+           html: msg + "<br>" + "<br>" +
+               '<button type="button"  class="btn learnmore send mb-3 mt-3 CustomBox m-auto minauto wx-100 h-auto py-2 px-4" >' + 'OK' + '</button>',
+           type: "success",
+           showConfirmButton: false,
+           showCancelButton: false
+       });
+   }
+   $(document).on('click', '.CustomBox', function () {
+
+       console.log('Button 1');
+       swal.clickConfirm();
+   });
+</script>

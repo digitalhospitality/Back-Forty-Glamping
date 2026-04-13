@@ -1,0 +1,49 @@
+<ul class="px-0 text-center mb-0 booknowul align-items-center justify-content-around list-inline booknow-ul">
+
+    <li class="text-left checkinn">
+        <div class="lh-15">
+            <label for="checkinn" class="mb-0 d-block">Check In </label>
+            <input type="text" id="txtchin" tabindex="16" name="txtchin" readonly="ReadOnly" style="cursor: pointer; position: relative;" placeholder="Check In" />
+
+        </div>
+    </li>
+    <li class="text-left checkinn">
+        <div class="lh-15">
+            <label for="checkinn" class="mb-0 d-block">Check Out </label>
+            <input type="text" id="txtchout" tabindex="16" name="txtchout" readonly="ReadOnly" style="cursor: pointer; position: relative;" placeholder="Check Out" />
+
+        </div>
+    </li>
+    <li class="text-left checkinn d-none">
+        <label class="Roomstop"># of Rooms </label>
+        <select class="" size="2" tabindex="18" id="nroom" name="nroom" data-minimum-results-for-search="Infinity">
+            <option value="1" selected="">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+    </li>
+    <li class=" p-0 border-0 me-0"><a href="javascript:void(0)" id="BookNow" onclick="BookHotel(this)" class="btn book-btn btnBookNow text-capitalize">Book Now </a></li>
+    <!--<li class="checkAvailability px-0 border-0"><a href="javascript:void(0)" id="BookNow" class="btn book-btn btnBookNow" onclick="BookHotel(this)">Book a Room </a></li>-->
+</ul>
+<div style="display:none" class="hiddenField">
+    <input type="hidden" id="Menu" name="Menu">
+    <input id="English" type="hidden" name="English">
+    <input type="hidden" id="SubMenu" name="SubMenu">
+    <input id="txtDateFr" type="hidden" name="txtDateFr">
+    <input id="txtDateTo" type="hidden" name="txtDateTo">
+    <input id="SelectDateFr" type="hidden" name="SelectDateFr">
+    <input id="SelectDateTo" type="hidden" name="SelectDateTo">
+    <input id="url" type="hidden" name="url">
+    <select id="arrivalDay" name="arrivalDay"></select>
+    <select class="selectdate" id="arrivalMonthYear" name="arrivalMonthYear"></select>
+    <select class="selectday" id="departureDay" name="departureDay"></select>
+    <select class="selectdate" id="departureMonthYear" name="departureMonthYear"></select>
+    <input id="txtNights" type="hidden" name="txtNights">
+    <input type="hidden" name="lpsv" value="MoyIM ckbZ oVsZDlIyl lkWQ~Vos;lZ izkbosV fyfeVsM] t;iqj ï¿½Hkkjrï¿½">
+</div>

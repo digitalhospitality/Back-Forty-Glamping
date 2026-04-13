@@ -1,0 +1,800 @@
+﻿#ui-datepicker-div {
+    font-size: 17px;
+    width: 760px !important;
+    border-radius: 12px !important;
+    border-bottom: solid 1px #dcdede !important;
+    border-left: solid 1px #dcdede !important;
+    border-right: solid 1px #dcdede !important;
+    -moz-box-sizing: none !important
+}
+
+.ui-datepicker *, :before, :after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+.ie .ui-datepicker *, :before, :after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-radius: 10px 10px 0 0 !important
+}
+
+:after {
+    -moz-box-sizing: none !important
+}
+
+.ui-datepicker {
+    display: none;
+    padding: 0 !important;
+    width: 17em
+}
+
+.ui-datepicker-title select {
+    border: solid 1px #b9bcc6
+}
+
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+    margin-left: 5px;
+    border: none !important;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px -webkit-appearance:none
+}
+
+.selectMonth_Outer {
+    width: 130px;
+    overflow: hidden;
+    float: left;
+    margin-left: 27px;
+    margin-top: 4px
+}
+
+    .selectMonth_Outer select {
+        padding: 5px 0;
+        width: 120% !important;
+        border: none;
+        box-shadow: none;
+        background: #736a64 url(Calendar/base/images/slect_arrow.png) no-repeat 110px 10px !important;
+        cursor: pointer
+    }
+
+        .selectMonth_Outer select:focus {
+            outline: none
+        }
+
+.ui-datepicker-year select {
+    padding: 5px 0;
+    width: 112% !important;
+    border: none;
+    box-shadow: none;
+    background: #736a64 url(Calendar/base/images/slect_arrow.png) no-repeat 50px 10px !important;
+    cursor: pointer
+}
+
+    .ui-datepicker-year select:focus {
+        outline: none
+    }
+
+.ui-datepicker td span, .ui-datepicker td a {
+    display: block;
+    padding: 0 !important;
+    text-align: center;
+    text-decoration: none
+}
+
+.selectYear_Outer {
+    width: 70px;
+    overflow: hidden;
+    float: left;
+    margin-left: 30px;
+    margin-top: 4px
+}
+
+    .selectYear_Outer select {
+        padding: 5px 0;
+        width: 118% !important;
+        border: none;
+        box-shadow: none;
+        ;
+        background: url(Calendar/base/images/slect_arrow.png) no-repeat 50px 10px#736a64 !important
+    }
+
+        .selectYear_Outer select:focus {
+            outline: none
+        }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    color: #2d2e29;
+    font-weight: 400;
+    text-align: center;
+    font-size: 16px;
+}
+
+.ui-state-active {
+    border: 1px solid #999;
+    background: url(images/calender-hover.png) 50% 50% no-repeat;
+    font-weight: 400;
+    color: #fff;
+    color: #fff !important
+}
+
+#ui-datepicker-div {
+    z-index: 11111 !important;
+    padding-bottom: 10px !important
+}
+
+.start-date .ui-state-default {
+    /*background: url(../Calendar/base/images/calender-hover.png) no-repeat right top !important;*/
+    color: #fff !important;
+    height: 47px;
+    width: 47px
+}
+
+.end-date .ui-state-default {
+    background: url(../Calendar/base/images/calender-hover.png) no-repeat left top !important;
+    color: #fff !important;
+    height: 47px;
+    width: 47px
+}
+
+.between-date .ui-state-default {
+    background: #eb6b00 !important;
+    color: #fff !important;
+    height: 47px;
+    width: 47px
+}
+
+    .between-date .ui-state-default.ui-state-hover {
+        background: #fff !important;
+        color: #2D2E29 !important
+    }
+
+.between-date1 .ui-state-default {
+    background: #eb6b00 !important;
+    color: #2D2E29 !important
+}
+
+.ui-datepicker-unselectable.ui-state-disabled.start-date {
+    opacity: 1;
+    filter: Alpha(Opacity=100)
+}
+
+.ui-widget-header {
+    background: none !important;
+    font-weight: 400;
+    border-right: 0;
+    height: 46px
+}
+
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+    clear: left;
+    display: none !important
+}
+
+.ui-datepicker {
+    -webkit-box-shadow: 0 0 14px 0 rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 0 14px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 0 14px 0 rgba(0,0,0,0.15)
+}
+
+.ui-widget-header {
+    border: none !important
+}
+
+.chrome .ui-widget-header {
+    height: 41px !important
+}
+
+.ui-corner-right {
+    border-radius: 0 12px 0 0 !important
+}
+
+.ui-corner-left {
+    border-radius: 12px 0 0 0 !important
+}
+
+.ui-datepicker .ui-datepicker-prev span {
+    width: 45px !important;
+    height: 46px !important;
+    margin-top: -15px !important;
+    margin-left: -16px !important;
+    cursor: pointer;
+    background: url(https://www.digitalhospitalityhosting.com/Calendar2019/Calendar/base/images/arrow-left.png) no-repeat 15px 15px !important
+}
+
+    .ui-datepicker .ui-datepicker-prev span:hover {
+        width: 45px !important;
+        height: 46px !important;
+        margin-top: -15px !important;
+        margin-left: -16px !important;
+        border: none;
+        cursor: pointer;
+        background: url(https://www.digitalhospitalityhosting.com/Calendar2019/Calendar/base/images/arrow-left.png) no-repeat 15px 15px !important
+    }
+
+.ui-datepicker-prev.ui-corner-all.ui-state-disabled span {
+    width: 45px !important;
+    height: 46px !important;
+    margin-top: -15px !important;
+    margin-left: -16px !important;
+    cursor: pointer;
+    background: url(https://www.digitalhospitalityhosting.com/Calendar2019/Calendar/base/images/arrow-left.png) no-repeat 15px 15px !important
+}
+
+    .ui-datepicker-prev.ui-corner-all.ui-state-disabled span:hover {
+        width: 45px !important;
+        height: 46px !important;
+        margin-top: -15px !important;
+        margin-left: -16px !important;
+        border: none;
+        cursor: pointer;
+        background: url(https://www.digitalhospitalityhosting.com/Calendar2019/Calendar/base/images/arrow-left.png) no-repeat 15px 15px !important
+    }
+
+.ui-datepicker .ui-datepicker-next span {
+    display: block;
+    left: 50%;
+    margin-left: -29px !important;
+    margin-top: -15px !important;
+    position: absolute;
+    top: 50%;
+    width: 46px !important;
+    height: 46px !important;
+    background: url(https://www.digitalhospitalityhosting.com/Calendar2019/Calendar/base/images/arrow-right.png) no-repeat 15px 15px !important;
+    cursor: pointer;
+    
+}
+
+.ui-datepicker .ui-datepicker-prev {
+    left: 1px !important;
+    top: 0 !important
+}
+
+.ui-datepicker .ui-datepicker-next {
+    right: 1px !important;
+    top: 0 !important
+}
+
+.ui-datepicker-header .ui-state-hover {
+    background: none !important;
+    border: none !important
+}
+
+.ui-state-hover, ui-widget-content .ui-state-hover {
+    background: url(../../content/images/calender-hover.png) no-repeat !important;
+    border-radius: 50px
+}
+
+.ui-state-default .ui-state-active {
+    color: #fff !important
+}
+
+.ui-datepicker .ui-datepicker-next span:hover {
+    display: block;
+    left: 50%;
+    margin-left: -29px !important;
+    margin-top: -15px !important;
+    position: absolute;
+    top: 50%;
+    width: 46px !important;
+    height: 46px !important;
+    border: none;
+    background: url(https://www.digitalhospitalityhosting.com/Calendar2019/Calendar/base/images/arrow-right.png) no-repeat 15px 15px !important;
+    cursor: pointer;
+    
+}
+
+.ui-datepicker th {
+    text-align: center;
+    font-weight: 300 !important;
+    color: #2d2e29 !important;
+}
+
+.ui-state-active {
+    background: none !important;
+    border: solid 1px #333 !important
+}
+
+.ui-datepicker-next.ui-corner-all.ui-state-disabled span {
+    left: 50%;
+    margin-left: -29px !important;
+    margin-top: -15px !important;
+    position: absolute;
+    top: 50%;
+    width: 45px !important;
+    height: 46px !important;
+    border: none;
+    background: url(https://www.digitalhospitalityhosting.com/Calendar2019/Calendar/base/images/arrow-right.png) no-repeat 15px 15px !important;
+    cursor: pointer;
+    
+}
+
+    .ui-datepicker-next.ui-corner-all.ui-state-disabled span:hover {
+        left: 50%;
+        margin-left: -29px !important;
+        margin-top: -15px !important;
+        position: absolute;
+        top: 50%;
+        width: 45px !important;
+        height: 46px !important;
+        border: none;
+        background: url(https://www.digitalhospitalityhosting.com/Calendar2019/Calendar/base/images/arrow-right.png) no-repeat 15px 15px !important;
+        cursor: pointer;
+        
+    }
+
+.ui-datepicker-month {
+    font-size: 16px;
+    -moz-box-sizing: padding-box !important;
+    color: #000 !important;
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 40px;
+
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 5px;
+    margin-top: -6px;
+    font-weight: 400
+}
+
+.ui-datepicker-year {
+    -moz-box-sizing: padding-box !important;
+    color: #000 !important;
+    display: inline-block;
+    padding-top: 4px;
+    padding-left: 5px;
+    font-weight: 400 !important;
+  
+}
+
+.ui-datepicker .ui-datepicker-title {
+    -moz-box-sizing: padding-box !important;
+    font-size: 16px !important;
+    
+}
+
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+    -moz-box-sizing: inherit !important;
+    text-align: left !important;
+    text-transform: uppercase;
+    cursor: pointer
+}
+
+.ui-datepicker-unselectable.end-date1 {
+    background: none
+}
+
+.start-date, .start-date.end-date1 {
+    background: #eb6b00;
+    border-radius: 30px 0 0 30px;
+    color: #fff !important
+}
+
+.end-date, .end-date1 {
+    background: #eb6b00;
+    border-radius: 0 30px 30px 0;
+    color: #fff !important
+}
+
+.between-date {
+    background: #eb6b00;
+    color: #fff !important
+}
+
+.between-date1 {
+    background: #ccc
+}
+
+.finalRow .bordereddate {
+    border-radius: 0 30px 30px 0 !important;
+    background: #2D2E29
+}
+
+    .finalRow .bordereddate.start-date {
+        background: #2D2E29 !important;
+        border-radius: 30px 0 0 30px !important
+    }
+
+.finalRow .start-date .ui-state-default {
+    background: none !important;
+    border-radius: 0
+
+}
+
+.between-date1.end-date {
+    background: #ccc;
+    padding: 0;
+    color: #2D2E29 !important;
+    border-radius: 0 !important
+}
+
+    .between-date1.end-date a.ui-state-default.ui-state-active {
+        color: #2D2E29 !important
+    }
+
+.ui-state-disabled.bordereddate {
+    background: none
+}
+
+.between-date.bordereddate {
+    background: #ccc;
+    border-radius: 0 !important
+}
+
+.start-date a.ui-state-default.ui-state-active {
+    color: #fff !important
+}
+
+.end-date a.ui-state-default.ui-state-active {
+    color: #fff !important
+}
+
+.between-date a {
+    color: #fff !important
+}
+
+.bordereddate a.ui-state-hover {
+    background: none !important;
+    border: 0 !important;
+    border-radius: 0 !important
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    background: url(../../assets/images/text_bg.png) no-repeat !important;
+    color: #8d99a6 !important;
+    width: 47px;
+    height: 47px;
+    -moz-box-sizing: inherit !important
+}
+
+.ui-datepicker td {
+    width: 47px !important;
+    padding: 0 !important
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border-radius: 100%;
+    border: none !important;
+    height: 47px;
+    width: 47px;
+    line-height: 47px;
+    
+}
+
+.closebox {
+    position: absolute;
+    right: 15px;
+    bottom: 0
+}
+
+div.closebox {
+    height: 47px;
+    width: 47px;
+    cursor: pointer;
+    line-height: 47px
+}
+
+    div.closebox:hover {
+        height: 47px;
+        width: 47px;
+        line-height: 47px
+    }
+
+    div.closebox:before {
+        content: "Close";
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #5d5d5d
+    }
+
+.ui-datepicker th {
+    border: 0 none;
+    font-weight: 400;
+    padding: .7em .3em;
+    text-align: center;
+    color: #000;
+    font-family: 'Helvetica-Light';
+    font-size: 14px;
+    -moz-box-sizing: padding-box !important
+}
+
+.ui-datepicker .ui-datepicker-title {
+    line-height: 1.8em;
+    margin: 0 1.3em !important;
+    text-align: center;
+    -moz-box-sizing: padding-box !important
+}
+
+.ui-widget-content {
+    border: none !important;
+    -moz-box-sizing: padding-box !important
+}
+
+option:checked {
+    background: #09a9d3 !important;
+    color: #fff !important
+}
+
+    option:checked:hover, select:focus option:checked:hover {
+        background: #09a9d3 !important;
+        color: #fff !important;
+        -moz-box-sizing: padding-box !important
+    }
+
+.monthDropdoen .dropdown {
+    -moz-user-select: none;
+    -moz-box-sizing: padding-box !important;
+    text-transform: uppercase;
+    border: solid 1px transparent;
+    color: #000;
+    cursor: pointer;
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 0 0 8px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    white-space: nowrap;
+    width: 100%;
+    float: left;
+    font-weight: 400 !important
+}
+
+    .monthDropdoen .dropdown:after {
+        position: absolute;
+        right: 10px;
+        color: #666
+    }
+
+    .monthDropdoen .dropdown.open {
+        border: solid 1px #ccc
+    }
+
+    .monthDropdoen .dropdown.small {
+        width: 160px
+    }
+
+    .monthDropdoen .dropdown ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 26px;
+        left: -1px;
+        z-index: 5;
+        border: 1px solid #ccc;
+        width: 100%;
+        color: #ccc;
+        background-color: #fff;
+        display: none;
+        color: #666;
+        font-size: 16px;
+        width: 106px
+    }
+
+    .monthDropdoen .dropdown li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        padding: 2px 3px;
+        text-indent: 5px
+    }
+
+        .monthDropdoen .dropdown li:hover {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            padding: 2px 3px;
+            text-indent: 5px;
+            background: #68bd45;
+            color: #fff
+        }
+
+        .monthDropdoen .dropdown li.other {
+            color: #2e8fda;
+            font-size: 14px;
+            background: 0;
+            border-top: 1px solid #dedede
+        }
+
+            .monthDropdoen .dropdown li.other:hover {
+                background: #09a9d3
+            }
+
+.monthDropdoen {
+    margin-top: 5px;
+    display: inline-block
+}
+
+.yearDropdoen {
+    margin-top: 5px;
+    display: inline-block
+}
+
+    .yearDropdoen .dropdown {
+        -moz-box-sizing: padding-box !important;
+        border: solid 1px transparent;
+        color: #000;
+        cursor: pointer;
+        display: block;
+        height: 26px;
+        line-height: 26px;
+        padding: 0 0 0 8px;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        white-space: nowrap;
+        width: 100%;
+        float: left;
+       
+        font-weight: 400 !important
+    }
+
+        .yearDropdoen .dropdown:after {
+            position: absolute;
+            right: 10px;
+            color: #666;
+            -moz-box-sizing: none !important
+        }
+
+        .yearDropdoen .dropdown.open {
+            border: solid 1px #ccc
+        }
+
+        .yearDropdoen .dropdown.small {
+            width: 160px
+        }
+
+        .yearDropdoen .dropdown ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 26px;
+            left: -1px;
+            z-index: 5;
+            border: 1px solid #ccc;
+            width: 100%;
+            color: #ccc;
+            background-color: #fff;
+            display: none;
+            color: #666;
+            font-size: 16px
+        }
+
+        .yearDropdoen .dropdown li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            padding: 2px 3px;
+            text-indent: 5px
+        }
+
+            .yearDropdoen .dropdown li:hover {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                padding: 2px 3px;
+                text-indent: 5px;
+                background: #68bd45;
+                color: #fff
+            }
+
+            .yearDropdoen .dropdown li.other {
+                color: #2e8fda;
+                font-size: 14px;
+                background: 0;
+                border-top: 1px solid #dedede
+            }
+
+                .yearDropdoen .dropdown li.other:hover {
+                    background: #68bd45
+                }
+
+.ui-datepicker .ui-datepicker-title {
+    width: 50%;
+    margin: 4px auto !important
+}
+
+@media only screen and (max-width:800px) {
+    #ui-datepicker-div {
+        width: 15em !important;
+        line-height: 118%;
+        left: 20% !important;
+        width: 300px !important
+    }
+
+    .ui-datepicker .ui-datepicker-title {
+        font-size: 12px !important
+    }
+
+    .selectMonth_Outer {
+        width: 100px
+    }
+
+    .ui-datepicker th {
+        font-size: 13px
+    }
+
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+        font-size: 14px
+    }
+
+    .selectYear_Outer select {
+        width: 97% !important
+    }
+
+    .ui-widget-header {
+        border-radius: 10px
+    }
+
+    .monthDropdoen {
+        width: 40%
+    }
+
+    .yearDropdoen .dropdown {
+        width: 60%
+    }
+
+    .yearDropdoen {
+        width: 45%;
+        margin-left: 13px
+    }
+
+    .monthDropdoen .dropdown ul {
+        font-size: 12px
+    }
+
+    .yearDropdoen .dropdown ul {
+        font-size: 12px
+    }
+
+    #ui-datepicker-div {
+        width: 374px !important
+    }
+
+    .monthDropdoen .dropdown {
+        font-size: 13px
+    }
+
+    .yearDropdoen .dropdown {
+        padding: 0 0 0 7px;
+        font-size: 13px
+    }
+
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+        height: 37px;
+        width: 37px;
+        line-height: 37px;
+        background-size: 37px !important
+    }
+
+    .ui-datepicker .ui-datepicker-title {
+        width: 47%;
+        display: flex;
+        justify-content: center
+    }
+}
+
+@media only screen and (max-width:479px) {
+    #ui-datepicker-div {
+        width: 300px !important;
+        left: 3% !important
+    }
+
+    .monthDropdoen {
+        width: 54%
+    }
+
+    .ui-datepicker .ui-datepicker-title {
+        width: 60%
+    }
+}

@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F301D54C-E484-4086-9E9E-1A3B7E16E8E4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>backfortyglamping2026</RootNamespace>
+    <AssemblyName>backfortyglamping2026</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Back_Forty_Glamping_DB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Back_Forty_Glamping_DB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Back_Forty_Glamping_DB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Back_Forty_Glamping_DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Back_Forty_Glamping_DB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Back_Forty_Glamping_DB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\EndUser\EndUserController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NewsLetter\NewsLetterModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUpNewsLetter.cs">
+      <DependentUpon>Back_Forty_Glamping_DB.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\images\favicon.png" />
+    <Content Include="assets\images\text_bg.png" />
+    <Content Include="assets\js\booknow.js" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\js\Client.js" />
+    <Content Include="assets\js\jquery-3.5.1.js" />
+    <Content Include="assets\css\newcalendar.css" />
+    <Content Include="assets\css\owl.carousel.min.css" />
+    <Content Include="assets\css\responsive.css" />
+    <Content Include="assets\css\select2.css" />
+    <Content Include="assets\js\owl.carousel.min.js" />
+    <Content Include="assets\js\select2.min.js" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\sweetalert2.min.css" />
+    <Content Include="assets\js\sweetalert2.min.js" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\js\bootstrap.bundle.min.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\customb.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\owl.carousel.js" />
+    <Content Include="Back_Forty_Glamping_DB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Back_Forty_Glamping_DB.Context.cs</LastGenOutput>
+      <DependentUpon>Back_Forty_Glamping_DB.edmx</DependentUpon>
+    </Content>
+    <Content Include="Back_Forty_Glamping_DB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Back_Forty_Glamping_DB.edmx</DependentUpon>
+      <LastGenOutput>Back_Forty_Glamping_DB.cs</LastGenOutput>
+    </Content>
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\backfortyglamping2026.dll" />
+    <Content Include="bin\backfortyglamping2026.pdb" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\csi.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="bin\roslyn\System.AppContext.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Console.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="bin\roslyn\System.IO.Compression.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="bin\roslyn\System.IO.Pipes.AccessControl.dll" />
+    <Content Include="bin\roslyn\System.IO.Pipes.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\System.Security.AccessControl.dll" />
+    <Content Include="bin\roslyn\System.Security.Claims.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="bin\roslyn\System.Security.Principal.Windows.dll" />
+    <Content Include="bin\roslyn\System.Text.Encoding.CodePages.dll" />
+    <Content Include="bin\roslyn\System.ValueTuple.dll" />
+    <Content Include="bin\roslyn\System.Xml.ReaderWriter.dll" />
+    <Content Include="bin\roslyn\System.Xml.XmlDocument.dll" />
+    <Content Include="bin\roslyn\System.Xml.XPath.dll" />
+    <Content Include="bin\roslyn\System.Xml.XPath.XDocument.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="booknow.htm" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="scripts\jquery.flexslider-min.js" />
+    <Content Include="scripts\jquery.flexslider.js" />
+    <Content Include="scripts\lightgallery-all.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\EndUser\Index.cshtml" />
+    <Content Include="Views\EndUser\ErrorPage404.cshtml" />
+    <Content Include="Views\Shared\_LayoutEUMaster.cshtml" />
+    <Content Include="Views\Shared\_PartialFooter.cshtml" />
+    <Content Include="Views\Shared\_PartialHeader.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\" />
+    <Folder Include="obj\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\corbel-light.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\Helvetica-Light.otf" />
+    <Content Include="assets\fonts\Helvetica-Regular.otf" />
+    <Content Include="assets\fonts\NOIRetBLANCMedium.ttf" />
+    <Content Include="assets\fonts\NOIRetBLANCMediumBold.ttf" />
+    <Content Include="assets\images\afamily-vision-old.webp" />
+    <Content Include="assets\images\afamily-vision.webp" />
+    <Content Include="assets\images\amenities-banner.webp" />
+    <Content Include="assets\images\amenties1.webp" />
+    <Content Include="assets\images\amenties2.webp" />
+    <Content Include="assets\images\amenties3.webp" />
+    <Content Include="assets\images\backforty-logo-darkgreen.webp" />
+    <Content Include="assets\images\backforty-logo.webp" />
+    <Content Include="assets\images\banner-bottomdesign.webp" />
+    <Content Include="assets\images\bed-kitchen.webp" />
+    <Content Include="assets\images\ben.webp" />
+    <Content Include="assets\images\blue-mountain.webp" />
+    <Content Include="assets\images\casero.webp" />
+    <Content Include="assets\images\charcuterie-board-add-on.webp" />
+    <Content Include="assets\images\coffin-ridge.webp" />
+    <Content Include="assets\images\couple-with-wine.webp" />
+    <Content Include="assets\images\couples-massage.webp" />
+    <Content Include="assets\images\dining-banner.webp" />
+    <Content Include="assets\images\domes-banner.webp" />
+    <Content Include="assets\images\down-home.webp" />
+    <Content Include="assets\images\down.webp" />
+    <Content Include="assets\images\ev-chargers.webp" />
+    <Content Include="assets\images\exterior1.webp" />
+    <Content Include="assets\images\exterior2.webp" />
+    <Content Include="assets\images\exterior3.webp" />
+    <Content Include="assets\images\fabricca.webp" />
+    <Content Include="assets\images\fire-pit.webp" />
+    <Content Include="assets\images\follow-icon1.webp" />
+    <Content Include="assets\images\follow-icon2.webp" />
+    <Content Include="assets\images\follow-icon3.webp" />
+    <Content Include="assets\images\food-and-package.webp" />
+    <Content Include="assets\images\forest-dome-drone-shot.webp" />
+    <Content Include="assets\images\forest-dome-drone.webp" />
+    <Content Include="assets\images\forest-dome-firepit.webp" />
+    <Content Include="assets\images\forest-dome-view.webp" />
+    <Content Include="assets\images\forty-banner.webp" />
+    <Content Include="assets\images\free-spirit.webp" />
+    <Content Include="assets\images\gallery-banner.webp" />
+    <Content Include="assets\images\games.webp" />
+    <Content Include="assets\images\georgian-bg.webp" />
+    <Content Include="assets\images\georgian-hills.webp" />
+    <Content Include="assets\images\gio-and-frans.webp" />
+    <Content Include="assets\images\glamping.webp" />
+    <Content Include="assets\images\hearts-tavern.webp" />
+    <Content Include="assets\images\home-banner.webp" />
+    <Content Include="assets\images\hot-tub.webp" />
+    <Content Include="assets\images\info-bg.webp" />
+    <Content Include="assets\images\inglis-falls.webp" />
+    <Content Include="assets\images\interior1.webp" />
+    <Content Include="assets\images\interior2.webp" />
+    <Content Include="assets\images\interior3.webp" />
+    <Content Include="assets\images\kitchenette.webp" />
+    <Content Include="assets\images\library.webp" />
+    <Content Include="assets\images\listicon1.webp" />
+    <Content Include="assets\images\listicon2.webp" />
+    <Content Include="assets\images\listicon3.webp" />
+    <Content Include="assets\images\local-area-banner.webp" />
+    <Content Include="assets\images\map.webp" />
+    <Content Include="assets\images\marilynne-restaurant.webp" />
+    <Content Include="assets\images\mcgintys-cafe.webp" />
+    <Content Include="assets\images\meadow-dome-exterior.webp" />
+    <Content Include="assets\images\meadow-dome-hot-tub.webp" />
+    <Content Include="assets\images\meadow-dome.webp" />
+    <Content Include="assets\images\meaford-harbour.webp" />
+    <Content Include="assets\images\menu.webp" />
+    <Content Include="assets\images\menuhover.webp" />
+    <Content Include="assets\images\menuhover1.webp" />
+    <Content Include="assets\images\mudtown-station.webp" />
+    <Content Include="assets\images\policies-banner.webp" />
+    <Content Include="assets\images\pond.webp" />
+    <Content Include="assets\images\questions-bg.webp" />
+    <Content Include="assets\images\reading-on-bed.webp" />
+    <Content Include="assets\images\sauna.webp" />
+    <Content Include="assets\images\savvy-co.webp" />
+    <Content Include="assets\images\scott.webp" />
+    <Content Include="assets\images\shannys-kitchen.webp" />
+    <Content Include="assets\images\snowshoes.webp" />
+    <Content Include="assets\images\spa-passes.webp" />
+    <Content Include="assets\images\station87.webp" />
+    <Content Include="assets\images\teds-range-road-diner.webp" />
+    <Content Include="assets\images\the-dam-pub.webp" />
+    <Content Include="assets\images\the-port-tavern.webp" />
+    <Content Include="assets\images\the-roost-winery.webp" />
+    <Content Include="assets\images\thornbury-bakery-cafe.webp" />
+    <Content Include="assets\images\walking-trails.webp" />
+    <Content Include="bin\backfortyglamping2026.dll.config" />
+    <Content Include="bin\roslyn\csc.exe.config" />
+    <Content Include="bin\roslyn\csc.rsp" />
+    <Content Include="bin\roslyn\csi.exe.config" />
+    <Content Include="bin\roslyn\csi.rsp" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.Managed.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\vbc.exe.config" />
+    <Content Include="bin\roslyn\vbc.rsp" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="assets\images\around-georgian-bay.webp" />
+    <Content Include="assets\images\arrow-top.webp" />
+    <Content Include="assets\images\back-forty-glamping-images.webp" />
+    <Content Include="assets\images\back-forty-pond.webp" />
+    <Content Include="assets\images\back-forty-postcard.webp" />
+    <Content Include="assets\images\back-forty-road-sign.webp" />
+    <Content Include="assets\images\back-forty-story.webp" />
+    <Content Include="assets\images\bed-kitchen-view-meadow-dome-home.webp" />
+    <Content Include="assets\images\bed-kitchen-view-meadow-dome-menu.webp" />
+    <Content Include="assets\images\bed-kitchen-view-meadow-dome.webp" />
+    <Content Include="assets\images\ben-alyssa.webp" />
+    <Content Include="assets\images\blue-mountain-village.webp" />
+    <Content Include="assets\images\bognor-marsh-management-area.webp" />
+    <Content Include="assets\images\chairs-on-forest-dome-deck.webp" />
+    <Content Include="assets\images\coffee-and-sunrise.webp" />
+    <Content Include="assets\images\coffin-ridge-winery.webp" />
+    <Content Include="assets\images\couple-going-into-sauna.webp" />
+    <Content Include="assets\images\couple-holding-b40-mugs.webp" />
+    <Content Include="assets\images\couple-in-hammock-at-back-forty-glamping.webp" />
+    <Content Include="assets\images\couple-in-hammock.webp" />
+    <Content Include="assets\images\couple-inside-sauna-winter.webp" />
+    <Content Include="assets\images\couple-walking-on-trail.webp" />
+    <Content Include="assets\images\couple-walking-to-sauna-winter.webp" />
+    <Content Include="assets\images\couple-with-wine-at-forest-dome-firepit.webp" />
+    <Content Include="assets\images\david-johnston-park.webp" />
+    <Content Include="assets\images\dome-at-night.webp" />
+    <Content Include="assets\images\dome-hot-tub-dine-am.webp" />
+    <Content Include="assets\images\dome-hot-tub-dine.webp" />
+    <Content Include="assets\images\downtown-meaford.webp" />
+    <Content Include="assets\images\drone-shot-forest-domes-meadow-dome-winter.webp" />
+    <Content Include="assets\images\error.webp" />
+    <Content Include="assets\images\eugenia-falls.webp" />
+    <Content Include="assets\images\ev-chargers-in-parking-lot.webp" />
+    <Content Include="assets\images\exterior-forest-dome-menu.webp" />
+    <Content Include="assets\images\exterior-forest-dome.webp" />
+    <Content Include="assets\images\exterior-of-forest-domes-home.webp" />
+    <Content Include="assets\images\exterior-of-forest-domes.webp" />
+    <Content Include="assets\images\exterior-sauna-winter-amenities.webp" />
+    <Content Include="assets\images\exterior-sauna-winter.webp" />
+    <Content Include="assets\images\forest-dome-hot-tub.webp" />
+    <Content Include="assets\images\forest-dome-interior-view.webp" />
+    <Content Include="assets\images\forest-dome-kitchen-dine.webp" />
+    <Content Include="assets\images\forest-dome-kitchen-home.webp" />
+    <Content Include="assets\images\forest-dome-kitchen.webp" />
+    <Content Include="assets\images\forest-dome-sitting-chairs-dine.webp" />
+    <Content Include="assets\images\forest-dome-view-dine.webp" />
+    <Content Include="assets\images\forest-dome-view-home.webp" />
+    <Content Include="assets\images\forest-dome-fall-aerial-view.webp" />
+    <Content Include="assets\images\forest-dome-fall-drone-shot.webp" />
+    <Content Include="assets\images\forest-dome-fall-view-home.webp" />
+    <Content Include="assets\images\forest-dome-firepit-dine.webp" />
+    <Content Include="assets\images\forest-dome-firepit-gallery.webp" />
+    <Content Include="assets\images\forest-dome-aerial-view.webp" />
+    <Content Include="assets\images\forest-dome-bathroom-dine-am.webp" />
+    <Content Include="assets\images\forest-dome-bathroom-dine.webp" />
+    <Content Include="assets\images\forest-dome-bathroom-winter.webp" />
+    <Content Include="assets\images\forest-dome-bed-dine.webp" />
+    <Content Include="assets\images\forest-dome-drone-shot-domes-slider.webp" />
+    <Content Include="assets\images\floating-shelves-and-skylight-forest-dome.webp" />
+    <Content Include="assets\images\forest-dome-winter-aerial-view.webp" />
+    <Content Include="assets\images\forest-domes-summer-drone-shot.webp" />
+    <Content Include="assets\images\forest-domes-winter-drone-shot.webp" />
+    <Content Include="assets\images\free-parking.webp" />
+    <Content Include="assets\images\free-spirit-tours.webp" />
+    <Content Include="assets\images\grandma-lambes.webp" />
+    <Content Include="assets\images\hibou-conservation-area.webp" />
+    <Content Include="assets\images\jones-falls.webp" />
+    <Content Include="assets\images\meadow-dome-at-christmas-with-tree.webp" />
+    <Content Include="assets\images\meadow-dome-at-christmas.webp" />
+    <Content Include="assets\images\meadow-dome-bathroom-dine.webp" />
+    <Content Include="assets\images\meadow-dome-bathroom-shower-dine.webp" />
+    <Content Include="assets\images\meadow-dome-bed-dine-am.webp" />
+    <Content Include="assets\images\meadow-dome-bed-dine.webp" />
+    <Content Include="assets\images\meadow-dome-exterior-domes-slider.webp" />
+    <Content Include="assets\images\meadow-dome-full-kitchen-dine-am.webp" />
+    <Content Include="assets\images\meadow-dome-hot-tub-restore.webp" />
+    <Content Include="assets\images\meadow-dome-kitchen-and-view.webp" />
+    <Content Include="assets\images\meadow-dome-kitchen-dine.webp" />
+    <Content Include="assets\images\meadow-dome-kitchen.webp" />
+    <Content Include="assets\images\meadow-dome-sitting-chairs-dine.webp" />
+    <Content Include="assets\images\meadow-with-dome-in-distance.webp" />
+    <Content Include="assets\images\meaford-hall-arts-and-cultural-centre.webp" />
+    <Content Include="assets\images\meaford-harbour-and-marina.webp" />
+    <Content Include="assets\images\memorial-park.webp" />
+    <Content Include="assets\images\metcalfe-rock.webp" />
+    <Content Include="assets\images\old-baldy-conservation-area.webp" />
+    <Content Include="assets\images\private-fire-pit.webp" />
+    <Content Include="assets\images\proposal-setup-meadow-dome.webp" />
+    <Content Include="assets\images\scenic-caves-nature-adventures.webp" />
+    <Content Include="assets\images\scott-elizabeth.webp" />
+    <Content Include="assets\images\singhampton-caves-trail.webp" />
+    <Content Include="assets\images\sipping-coffee-in-forest-dome.webp" />
+    <Content Include="assets\images\snow-shoes-menu.webp" />
+    <Content Include="assets\images\snow-shoes.webp" />
+    <Content Include="assets\images\success.webp" />
+    <Content Include="assets\images\the-georgian-trail.webp" />
+    <Content Include="assets\images\things-to-do-in-south-georgian-bay.webp" />
+    <Content Include="assets\images\trout-hollow-trail.webp" />
+    <Content Include="assets\images\u-catchem-charters.webp" />
+    <Content Include="assets\images\walking-into-meadow-dome-home.webp" />
+    <Content Include="assets\images\walking-into-meadow-dome.webp" />
+    <Content Include="assets\images\walking-trails-at-back-forty-glamping.webp" />
+    <Content Include="assets\images\windsong-ranch.webp" />
+    <Content Include="assets\images\wineries-in-meaford-south-georgian-bay.webp" />
+    <EntityDeploy Include="Back_Forty_Glamping_DB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Back_Forty_Glamping_DB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Back_Forty_Glamping_DB.edmx.diagram">
+      <DependentUpon>Back_Forty_Glamping_DB.edmx</DependentUpon>
+    </Content>
+    <Content Include=".vs\backfortyglamping2026.csproj.dtbcache.json" />
+    <None Include="packages.config" />
+    <Content Include="Views\EndUser\aboutus.cshtml" />
+    <Content Include="Views\EndUser\amenities.cshtml" />
+    <Content Include="Views\EndUser\contactus.cshtml" />
+    <Content Include="Views\EndUser\dining.cshtml" />
+    <Content Include="Views\EndUser\domes.cshtml" />
+    <Content Include="Views\EndUser\gallery.cshtml" />
+    <Content Include="Views\EndUser\localarea.cshtml" />
+    <Content Include="Views\EndUser\policies.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Views\EndUser\PrivacyPolicy.cshtml" />
+    <Content Include="Views\EndUser\Sitemap.cshtml" />
+    <Content Include="Views\Shared\_LayoutEULocalMaster.cshtml" />
+    <Content Include="Views\Shared\_PartialFooterSitemap.cshtml" />
+    <Content Include="Views\Shared\_LayoutEUMasterSitemap.cshtml" />
+    <Content Include="Views\EndUser\Concierge.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56088</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56088/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

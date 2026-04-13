@@ -1,0 +1,263 @@
+﻿@{
+    ViewBag.Title = "aboutus";
+    Layout = "~/Views/Shared/_LayoutEUMaster.cshtml";
+}
+@section MetaSection{
+    <title>About Us | Back Forty Glamping | Ontario Luxury Dome</title>
+    <meta name="description" content="Discover the story behind our luxury glamping dome stays. Embrace comfort, hospitality & nature at the resort. Learn what makes us unique." />
+}
+<span id="MenuId" style="display: none;">aboutus</span>
+<main>
+
+    <section title="Forest Dome View" class="hero-banner" style="background: url('../../assets/images/forest-dome-view.webp');"></section>
+    <div class="banner-bottomdesign">
+        <img src="../../assets/images/banner-bottomdesign.webp" class="img-fluid w-100 h-100" alt="banner-bottomdesign" loading="lazy">
+    </div>
+
+    <section class="mainsec about-mainsec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-heading">
+                        <h1>Learn More About<br> Your Hosts</h1>
+                        <p>Meet the faces behind Back Forty Glamping: two couples - two brothers and their wives, whose shared dream turned into reality. Learn more about your glamping hosts Scott and Elizabeth, and Ben and Alyssa – the ordinary people who brought the dome magic to life!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row m15 m-b57">
+                <div class="col-md-12">
+                    <div class="aboutbig-img">
+                        <div class="vimeo-wrapper" id="videoBox">
+                            <!-- Custom Thumbnail -->
+                            <div class="video-thumbnail" id="videoThumb" style="background-image:url('assets/images/custom-video-thumbnail.webp');">
+                                <div class="custom-play" id="playBtn">▶</div>
+                            </div>
+                            <!-- Vimeo iframe (hidden initially) -->
+                            <iframe id="vimeoPlayer" src="https://player.vimeo.com/video/1148817748?autoplay=0&loop=1&controls=0&title=0&byline=0&portrait=0&muted=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+                            <!-- Mute/Unmute Button (shows after play) -->
+                            <button id="muteBtn" style="display:none; position:absolute; bottom:15px; right:15px; background:rgba(0,0,0,0.6); color:white; border:1px solid rgba(255,255,255,0); padding:8px 14px; cursor:pointer; font-size:0px; border-radius:6px; z-index:10;">🔊</button>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="row m15 m-b57">
+                <div class="col-md-6 p15 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-2">
+                    <div class="about-leftimg">
+                        <img src="../../assets/images/owners-and-founders-the-mcintoshs.webp" class="img-fluid" alt="Owners and Founders- The McIntoshs" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-md-6 p15 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-1">
+                    <div class="about-lefttext">
+                        <div class="">
+                            <h2>Meet the Owners & Founders - The McIntoshs</h2>
+                            <p>
+                                An idea born over family dinners, two brothers and their wives, Scott & Elizabeth and Ben & Alyssa McIntosh, discovered glamping on the East coast in 2018 and decided to bring the vision to life in Ontario. With a background in construction, Ben was nick-named the “think tank,” and took lead on creative design, specializing in custom builds for the domes and dreaming up new amenities that would wow our glampers. Scott left education to project manage the development and you can now find him navigating bylaws, jumping through hoops and over seeing the finances. Alyssa & Elizabeth both have a background in healthcare and have the ability to curate a flawless guest experience. From interior design, add-ons and the overall feel, both of them continue to work behind the scenes through website design, media and marketing, team management and networking.
+
+                            </p>
+                            <p>
+                                We can't forget our pup, Forty! You may be graced with a friendly greeting, a surprise window visit or a trail side companion. You'll find her working with the maintenance team, chasing birds in the field and stealing hearts with her gentle, curious demeanor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @*<div class="row m15 m-b57">
+                    <div class="col-md-7 p15 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-1">
+                        <div class="about-leftimg">
+                            <img src="../../assets/images/scott-elizabeth.webp" class="img-fluid" alt="Scott & Elizabeth" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-md-5 p15 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-2">
+                        <div class="about-lefttext">
+                            <div class="coltext-align-c">
+                                <h2>Scott and Elizabeth</h2>
+                                <p>Scott and Elizabeth bring a unique blend of skills and passions to Back Forty. Scott, with his roots in education, has always been drawn to the outdoors, envisioning a life beyond the classroom that connects people with nature. Elizabeth, with her background in nursing, focuses on ensuring every guest’s experience is comfortable and memorable. Together, they’ve turned their love for adventure and the great outdoors into creating a glamping experience that feels like home away from home.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row m15 m-b57">
+                    <div class="col-md-7 p15 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-2">
+                        <div class="about-leftimg">
+                            <img src="../../assets/images/ben-alyssa.webp" class="img-fluid" alt="Ben and Alyssa" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-md-5 p15 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-1">
+                        <div class="about-lefttext">
+                            <div class="coltext-align-c">
+                                <h2>Ben and Alyssa</h2>
+                                <p>Ben and Alyssa bring their love for craftsmanship and healthcare into the mix. Ben’s expertise as a carpenter shapes the physical space of Back Forty, making sure each dome stands out with quality and sustainability. Alyssa, also a nurse, champions the importance of a nurturing and welcoming environment. Their shared passion for the outdoors and community involvement makes them an essential part of the Back Forty Glamping experience.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row m15 m-b57">
+                    <div class="col-md-7 p15 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-1">
+                        <div class="about-leftimg">
+                            <img src="../../assets/images/jacqueline.webp" class="img-fluid"
+                                 alt="Jacqueline " loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-md-5 p15 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-2">
+                        <div class="about-lefttext">
+                            <div class="coltext-align-c">
+                                <h2>Jacqueline - Guest Service Manager </h2>
+                                <p>
+                                    Jacqueline is our ground zero behind every Back Forty stay. You’ll find her connecting with guests via email or phone, coordinating your stay and ensuring every guest experience feels effortless. She has a genuine passion for creating memorable moments, unforgettable surprises and adds thoughtful touches to turn every getaway into a lasting memory. Her passion for hospitality is contagious as she leads and manages our changeover team to exceptional standards.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row m15 m-b57">
+                    <div class="col-md-7 p15 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-2">
+                        <div class="about-leftimg">
+                            <img src="../../assets/images/Sydney.webp" class="img-fluid" alt="Sydney " loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-md-5 p15 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-1">
+                        <div class="about-lefttext">
+                            <div class="coltext-align-c">
+                                <h2>Sydney - On Site-Manager</h2>
+                                <p>
+                                    Sydney is our on-site coordinator, keeping everything running smoothly, ensuring every guest has a 5-star experience. She creatively problem solves, has a keen eye for detail and oversees all the moving parts that go on behind the scenes. From add-ons, to inventory, quality control, change over logistics, she guides our change-over team and serves our on site guests with bright ideas, creativity and heart.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row m15 m-b57">
+                    <div class="col-md-7 p15 order-1 order-sm-1 order-md-1 order-lg-1 order-xl-1">
+                        <div class="about-leftimg">
+                            <img src="../../assets/images/Alex.webp" class="img-fluid"
+                                 alt="Alex " loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-md-5 p15 order-2 order-sm-2 order-md-2 order-lg-2 order-xl-2">
+                        <div class="about-lefttext">
+                            <div class="coltext-align-c">
+                                <h2>Alex - Maintenance Manager </h2>
+                                <p>
+                                    Alex works to ensure Back Forty remains flawless behind the scenes. He is a jack of all trades, from snow removal, landscaping, part time mechanic and hot tub guru, excelling in fixing all the quirks that having a seven dome glamping retreat brings. Alex is a true problem solver, quick on his feet and always there if you need assistance.
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>*@
+
+        </div>
+    </section>
+
+    <section class="mainsec about-mainsec pt-0">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4 position-relative  d-flex flex-column">
+                    <div class="amenities-box d-flex flex-column h-100">
+                        <div class="addons-img">
+                            <img src="../../assets/images/jacqueline.webp" class="img-fluid" alt="Jacqueline - Guest Service Manager" loading="lazy">
+                        </div>
+                        <div class="addons-desc flex-grow-1 d-flex flex-column">
+                            <h3>Jacqueline - Guest Service Manager</h3>
+                            <p class="pe-0">
+                                Jacqueline is our ground zero behind every Back Forty stay. You’ll find her connecting with guests via email or phone, coordinating your stay and ensuring every guest experience feels effortless. She has a genuine passion for creating memorable moments, unforgettable surprises and adds thoughtful touches to turn every getaway into a lasting memory. Her passion for hospitality is contagious as she leads and manages our changeover team to exceptional standards.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-md-0 mt-5  d-flex flex-column">
+                    <div class="amenities-box d-flex flex-column h-100">
+                        <div class="addons-img">
+                            <img src="../../assets/images/sydney.webp" class="img-fluid" alt="Sydney - On Site-Manager" loading="lazy">
+                        </div>
+                        <div class="addons-desc flex-grow-1 d-flex flex-column">
+                            <h3>Sydney - On Site-Manager</h3>
+                            <p class="pe-0">
+                                Sydney is our on-site coordinator, keeping everything running smoothly, ensuring every guest has a 5-star experience. She creatively problem solves, has a keen eye for detail and oversees all the moving parts that go on behind the scenes. From add-ons, to inventory, quality control, change over logistics, she guides our change-over team and serves our on site guests with bright ideas, creativity and heart.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-md-0 mt-5  d-flex flex-column">
+                    <div class="amenities-box d-flex flex-column h-100">
+                        <div class="addons-img">
+                            <img src="../../assets/images/alex.webp" class="img-fluid" alt="Alex - Maintenance Manager" loading="lazy">
+                        </div>
+                        <div class="addons-desc flex-grow-1 d-flex flex-column">
+                            <h3>Alex - Maintenance Manager</h3>
+                            <p class="pe-0">
+                                Alex works to ensure Back Forty remains flawless behind the scenes. He is a jack of all trades, from snow removal, landscaping, part time mechanic and hot tub guru, excelling in fixing all the quirks that having a seven dome glamping retreat brings. Alex is a true problem solver, quick on his feet and always there if you need assistance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="forty-sec questions-sec" title="View From Forest Dome" style="background: url('../../assets/images/view-from-forest-dome-parallax.webp');">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="forty-heading">
+                        <h2>Ready to Book?</h2>
+                        <p>Head over to our online booking engine, or simply give us a call. Reserve your glamping dome today!</p>
+                        <a href="javascript:void(0)" id="BookNow" onclick="BookHotel(this)" class="btn bookdome" title="Book Now">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script>
+    const thumb = document.getElementById('videoThumb');
+    const iframe = document.getElementById('vimeoPlayer');
+    const muteBtn = document.getElementById('muteBtn');
+    let player;
+    let isMuted = false;
+
+    thumb.addEventListener('click', () => {
+        thumb.style.display = 'none';
+        iframe.style.display = 'block';
+
+        // Initialize Vimeo Player API
+        player = new Vimeo.Player(iframe);
+
+        // Play with sound
+        player.play().then(() => {
+            player.setMuted(false);
+            player.setVolume(1);
+            muteBtn.style.display = 'block';
+        }).catch(() => {
+            // Browser blocked sound, play muted
+            player.setMuted(true);
+            isMuted = true;
+           // muteBtn.textContent = '🔇';
+            muteBtn.style.display = 'block';
+        });
+    });
+
+    // Mute/Unmute toggle
+    muteBtn.addEventListener('click', () => {
+        if (!player) return;
+        isMuted = !isMuted;
+        player.setMuted(isMuted);
+        //muteBtn.textContent = isMuted ? '🔇' : '🔊';
+    });
+</script>
+
