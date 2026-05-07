@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Back_Forty_Glamping_DBModelStoreContainer" CdmEntityContainer="Back_Forty_Glamping_DBEntities">
+    <EntitySetMapping Name="SignUpNewsLetters">
+      <EntityTypeMapping TypeName="Back_Forty_Glamping_DBModel.SignUpNewsLetter">
+        <MappingFragment StoreEntitySet="SignUpNewsLetter">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="IntrestedIn" ColumnName="IntrestedIn" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="City" ColumnName="City" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

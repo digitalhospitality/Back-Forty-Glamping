@@ -25,6 +25,7 @@ namespace backfortyglamping2026
             routes.MapRoute("gallery", "gallery", new { controller = "EndUser", action = "gallery" });
             routes.MapRoute("localarea", "local-area", new { controller = "EndUser", action = "localarea" });
             routes.MapRoute("policies", "policies", new { controller = "EndUser", action = "policies" });
+            routes.MapRoute("JoinOurTeam", "join-our-team", new { controller = "EndUser", action = "JoinOurTeam" });
             routes.MapRoute("PrivacyPolicy", "privacy-policy", new { controller = "EndUser", action = "PrivacyPolicy" });
             routes.MapRoute("Sitemap", "sitemap", new { controller = "EndUser", action = "Sitemap" });
             //routes.MapRoute("Concierge", "concierge", new { controller = "EndUser", action = "Concierge" });

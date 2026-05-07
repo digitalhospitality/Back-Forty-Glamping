@@ -1356,19 +1356,29 @@ a {
 .policies-text {
     margin-bottom: 100px;
 }
-
-    .policies-text h2 {
+   .policies-text h2 {
         font-size: 55px;
         line-height: 80px;
         color: #1A1C18;
         margin-bottom: 25px;
     }
+.our-teams-box .policies-text h2 {
+    font-size: 38px;
+    line-height: 44px;
+    color: #1A1C18;
+    margin-bottom: 20px;
+}
 
     .policies-text p {
         font-size: 23px;
         line-height: 35px;
         margin-bottom: 24px;
     }
+
+.our-teams-box .policies-text ul li {
+    font-size: 23px;
+    line-height: 35px;
+}
 
 /*faq*/
 .faq-sec .main-heading {
