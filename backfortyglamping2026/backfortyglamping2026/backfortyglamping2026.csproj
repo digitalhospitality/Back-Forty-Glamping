@@ -246,6 +246,9 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="obj\Debug\backfortyglamping2026.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\backfortyglamping2026.dll" />
+    <Content Include="obj\Debug\backfortyglamping2026.pdb" />
     <Content Include="scripts\jquery.flexslider-min.js" />
     <Content Include="scripts\jquery.flexslider.js" />
     <Content Include="scripts\lightgallery-all.min.js" />
@@ -266,6 +269,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -490,6 +494,13 @@
       <DependentUpon>Back_Forty_Glamping_DB.edmx</DependentUpon>
     </Content>
     <Content Include=".vs\backfortyglamping2026.csproj.dtbcache.json" />
+    <Content Include="obj\Debug\backfortyglamping2026.csproj.CopyComplete" />
+    <Content Include="obj\Debug\backfortyglamping2026.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\backfortyglamping2026.csprojAssemblyReference.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Back_Forty_Glamping_DB.csdl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Back_Forty_Glamping_DB.msl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Back_Forty_Glamping_DB.ssdl" />
     <None Include="packages.config" />
     <Content Include="Views\EndUser\aboutus.cshtml" />
     <Content Include="Views\EndUser\amenities.cshtml" />
