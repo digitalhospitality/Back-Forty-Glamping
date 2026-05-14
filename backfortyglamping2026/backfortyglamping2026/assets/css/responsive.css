@@ -25,7 +25,9 @@
 }
 
 @media (min-width: 320px) and (max-width: 480px){
-
+    .team-hero.hero-banner {
+        min-height: 280px !important;
+    }
 }
 
 
