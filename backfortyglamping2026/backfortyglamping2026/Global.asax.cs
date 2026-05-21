@@ -17,5 +17,30 @@ namespace backfortyglamping2026
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+        protected void Application_BeginRequest(Object sender, EventArgs e)
+        {
+            if (HttpContext.Current.Request.Url.ToString().ToLower().Contains("http://backfortyglamping.com/"))
+            {
+                HttpContext.Current.Response.Status = "301 Moved Permanently";
+                HttpContext.Current.Response.StatusCode = 301;
+                HttpContext.Current.Response.AddHeader("Location", Request.Url.ToString().ToLower().Replace("http://backfortyglamping.com/", "https://www.backfortyglamping.com/"));
+            }
+
+
+            if (HttpContext.Current.Request.Url.ToString().ToLower().Contains("https://backfortyglamping.com/"))
+            {
+                HttpContext.Current.Response.Status = "301 Moved Permanently";
+                HttpContext.Current.Response.StatusCode = 301;
+                HttpContext.Current.Response.AddHeader("Location", Request.Url.ToString().ToLower().Replace("https://backfortyglamping.com/", "https://www.backfortyglamping.com/"));
+            }
+
+
+            if (HttpContext.Current.Request.Url.ToString().ToLower().Contains("http://www.backfortyglamping.com"))
+            {
+                HttpContext.Current.Response.Status = "301 Moved Permanently";
+                HttpContext.Current.Response.StatusCode = 301;
+                HttpContext.Current.Response.AddHeader("Location", Request.Url.ToString().ToLower().Replace("http://www.backfortyglamping.com", "https://www.backfortyglamping.com"));
+            }
+        }
     }
 }
