@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Web;
@@ -298,23 +299,24 @@ namespace backfortyglamping2026.Controllers
 
 
                     string mailTo = System.Configuration.ConfigurationManager.AppSettings["SendContactUsmail"].ToString();
-
+                    System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
                     System.Net.Mail.MailMessage mailToAdmin = new System.Net.Mail.MailMessage();
-                    mailToAdmin.From = new System.Net.Mail.MailAddress("noreply@digitalhospitality.com", "Back Forty Glamping");
+                    mailToAdmin.From = new System.Net.Mail.MailAddress("noreply@digitalhospitality.com", "Back Forty Glamping" );
+
                     mailToAdmin.ReplyToList.Add(new System.Net.Mail.MailAddress(EmailTour));
                     mailToAdmin.To.Add(mailTo);
                     mailToAdmin.Subject = "Get in touch inquiry from website: " + Namegetintuch;
                     mailToAdmin.Body = message;
                     mailToAdmin.IsBodyHtml = true;
-
                     System.Net.Mail.SmtpClient SmtpServer = new System.Net.Mail.SmtpClient();
-                    SmtpServer.UseDefaultCredentials = true;
+
                     SmtpServer.Host = "smtp.gmail.com";
-                    SmtpServer.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
-                    SmtpServer.Port = 25;
-                    //   SmtpServer.UseDefaultCredentials = false;
-                    SmtpServer.Credentials = new System.Net.NetworkCredential("noreply@digitalhospitality.com", "ztdvnxfycctqqils");
+                    SmtpServer.Port = 587;
                     SmtpServer.EnableSsl = true;
+                    SmtpServer.UseDefaultCredentials = false;
+                    SmtpServer.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;                     
+                    SmtpServer.Credentials = new System.Net.NetworkCredential("noreply@digitalhospitality.com","ztdvnxfycctqqils");
+                    SmtpServer.Timeout = 30000;
                     SmtpServer.Send(mailToAdmin);
 
                 }
