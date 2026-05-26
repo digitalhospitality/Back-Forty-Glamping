@@ -63,6 +63,10 @@ namespace backfortyglamping2026.Controllers
         {
             return View();
         }
+        public ActionResult HotelBlog()
+        {
+            return View();
+        }
         public ActionResult PrivacyPolicy()
         {
             return View();

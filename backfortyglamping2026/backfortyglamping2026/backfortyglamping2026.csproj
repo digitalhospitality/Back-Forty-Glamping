@@ -518,6 +518,7 @@
     <Content Include="Views\Shared\_LayoutEUMasterSitemap.cshtml" />
     <Content Include="Views\EndUser\Concierge.cshtml" />
     <Content Include="Views\EndUser\JoinOurTeam.cshtml" />
+    <Content Include="Views\EndUser\HotelBlog.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
