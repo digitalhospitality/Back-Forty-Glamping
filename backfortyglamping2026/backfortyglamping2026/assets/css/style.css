@@ -1,15 +1,39 @@
 ﻿
 body {
-    font-family: 'Helvetica-Regular';
+    font-family: 'Helvetica';
     color: #1A1C18;
     background: #EBECE8;
 }
 
-@font-face {
+/*@font-face {
     font-family: 'Helvetica-Regular';
     src: url('../fonts/Helvetica-Regular.otf');
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Helvetica-Regular';
+    src: url('../fonts/Helvetica-Regular.woff2') format('woff2'), url('../fonts/Helvetica-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}*/
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica-Light.woff2') format('woff2'), url('../fonts/Helvetica-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.woff2') format('woff2'), url('../fonts/Helvetica.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 /*@font-face {*/
 /*   font-family: 'corbel-light';*/
 /*   src: url('../fonts/corbel-light.ttf');*/
