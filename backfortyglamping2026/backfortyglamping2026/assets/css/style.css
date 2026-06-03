@@ -5,6 +5,16 @@ body {
     background: #EBECE8;
 }
 
+
+u {
+    text-decoration: none !important;
+}
+u a{
+    font-weight:500;
+}
+.bannertopbg p a{
+    text-decoration:underline !important;
+}
 /*@font-face {
     font-family: 'Helvetica-Regular';
     src: url('../fonts/Helvetica-Regular.otf');
@@ -1438,7 +1448,7 @@ a {
         }
 
 .card .card-header .btn {
-    display: block;
+    display: inline-block;
     text-align: left;
     padding: 0px 77px 0px 0px;
     font-size: 55px;
